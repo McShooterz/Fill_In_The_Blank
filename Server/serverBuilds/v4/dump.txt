@@ -1,0 +1,70 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+=--=|    N E W  G A M E    |=--=  4.404798407772288e-05
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+--#-#-#--  WELCOME NEW PLAYER  --#-#-#--  :  pl_3
+starting game loop
+nwPlyr: ai0 0 0 AI_0
+nwPlyr: ai1 1 0 AI_1
+nwPlyr: ai2 2 0 AI_2
+nwPlyr: ai3 3 0 AI_3
+nwPlyr: empty -1 0 pl_3
+#pl_3: connection
+#pl_3: starting message recieve loop
+*************  start round  *************
+*                                       *
+-.-.- dealing out cards -.-.-
+ << (pl_3) << [nwCrd: 30]
+ << (pl_3) << [nwCrd: 45]
+ << (pl_3) << [nwCrd: 42]
+ << (pl_3) << [nwCrd: 37]
+ << (pl_3) << [nwCrd: 12]
+------mode changed:  PLAY
+ << (pl_3) << [playPhase: 44]
+ >> (pl_3) >> [Join: player 0]
+#pl_3: processing join message
+ << (pl_3) << [nwPlyr: ai0 0 0 AI_0]
+ << (pl_3) << [nwPlyr: ai1 1 0 AI_1]
+ << (pl_3) << [nwPlyr: ai2 2 0 AI_2]
+ << (pl_3) << [nwPlyr: ai3 3 0 AI_3]
+ << (pl_3) << [JoinAck: pl_3]
+ >> (pl_3) >> [ply: 45]
+#pl_3: processing play message
+all players played card
+------mode changed:  VOTE phase
+4
+20
+39
+3
+45
+votePhase: AI_0 4 AI_1 20 AI_2 39 AI_3 3 pl_3 45
+ << (pl_3) << [votePhase: AI_0 4 AI_1 20 AI_2 39 AI_3 3 pl_3 45]
+ >> (pl_3) >> [vt: AI_1]
+#pl_3: processing vote message
+------mode changed:  RESULTS
+vtRslt: AI_0: 2 AI_1: 1 AI_2: 0 AI_3: 1 pl_3: 1 
+ << (pl_3) << [vtRslt: AI_0: 2 AI_1: 1 AI_2: 0 AI_3: 1 pl_3: 1 ]
+*                                       *
+**************  end round  **************
+*************  start round  *************
+*                                       *
+-.-.- dealing out cards -.-.-
+ << (pl_3) << [nwCrd: 5]
+------mode changed:  PLAY
+ << (pl_3) << [playPhase: 41]
+ >> (pl_3) >> [ply: 42]
+#pl_3: processing play message
+all players played card
+------mode changed:  VOTE phase
+16
+6
+39
+44
+42
+votePhase: AI_0 16 AI_1 6 AI_2 39 AI_3 44 pl_3 42
+ << (pl_3) << [votePhase: AI_0 16 AI_1 6 AI_2 39 AI_3 44 pl_3 42]
+--><----><----><----><----><----><----><--
+An exception of type [ConnectionAbortedError] occured.
+Arguments:
+  (10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)
+=-><-==-><-==-><-==-><-==-><-==-><-==-><-=
+ >> (pl_3) >> [---TIMED_OUT---]

@@ -1,0 +1,25 @@
+this draft is just for server-client interaction in the context of a game,
+this does not include game creation or initial server interaction when a player logs in
+end message defined by \n
+client:
+	joined: Join: profileName picID color?
+	playCard: ply: cardID
+	voteCard: vt: cardID
+	message: msg: message
+	leave: bye
+	kick: @#$% you server
+	
+
+server:
+	joinedAcknowledged: JoinAck: lobbyName phase idnum votetime(-1for none) playtime(-1 for none)
+	newPlayer: nwPlyr: playerName picID color? points idnum
+	sendCards: nwCrd: cardID
+	voteCards: vtCrd: cardID-list(-1 for no selection)
+	vote results: vtRslt: NumPoints-list
+	playerLeave: byePlyr: playerID
+	phaseChange: chng: phase [phase info, situation id ect]
+	message: msg: plyrID "message"
+	won: winner: plyrID
+	kick: begone
+	error: err: chng: phase [phase info, situation id ect]
+	
